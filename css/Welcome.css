@@ -7,34 +7,80 @@
   animation: smoke 1s linear forwards;
 }
 
-.Wbody > .img {
+.Wbody .clipimg {
   width: 100%;
   height: 100%;
   background-image: no-repeat;
   background-position: center;
-  background-image: url("https://cdn.discordapp.com/attachments/1046481396044136528/1240275608169353216/black-monochrome-simple-background-minimalism-Moon-circle-134365-wallhere.com.jpg?ex=6645f82c&is=6644a6ac&hm=9e4ba867d7a4f1b9c3b9bd4b8b1458bd3ca877ce6f15ab4e493e2f75f0219406&");
+  background-image: url("/img/ClipPG.jpg");
   display: flex;
 }
 
-.Wbody > .img > div {
+.Wbody div {
   margin: 0 auto;
-  margin-top: 100px;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   color: white;
   user-select: none;
-  animation: blink 0.5s step-end infinite;
-  animation-direction: alternate;
 }
 
-.Wbody > .img > div > .Wtext {
+.Wbody h1 {
+  height: 100px;
+}
+
+.Wbody h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-size: 40px;
+  color: #FFF;
+  text-shadow: 
+  0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px rgba(0, 0, 0, .4);
+}
+
+.Wbody > .img > div > h1 span:nth-child(2) { animation-delay: .1s; }
+.Wbody > .img > div > h1 span:nth-child(3) { animation-delay: .2s; }
+.Wbody > .img > div > h1 span:nth-child(4) { animation-delay: .3s; }
+.Wbody > .img > div > h1 span:nth-child(5) { animation-delay: .4s; }
+.Wbody > .img > div > h1 span:nth-child(6) { animation-delay: .5s; }
+.Wbody > .img > div > h1 span:nth-child(7) { animation-delay: .6s; }
+.Wbody > .img > div > h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 
+    0 1px 0 #CCC,
+    0 2px 0 #CCC,
+    0 3px 0 #CCC,
+    0 4px 0 #CCC,
+    0 5px 0 #CCC,
+    0 6px 0 #CCC,
+    0 7px 0 #CCC,
+    0 8px 0 #CCC,
+    0 9px 0 #CCC,
+    0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.Wbody .Wtext {
   left: 50%;
   top: 50%;
-  transform: rotate(-63deg) translate(45%, -180%);
+  transform: rotate(-63deg) translate(7%, -169%);
   margin: auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
   user-select: none;
@@ -54,53 +100,5 @@
     display: none;
     filter: blur(20px);
     transform: scale(20);
-  }
-}
-
-@keyframes blink {
-  0% {
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-    filter: blur(0px);
-  }
-  10% {
-    opacity: 0.9;
-    filter: blur(1px);
-  }
-  20% {
-    opacity: 0.8;
-    filter: blur(2px);
-  }
-  30% {
-    opacity: 0.7;
-    filter: blur(3px);
-  }
-  40% {
-    opacity: 0.6;
-    filter: blur(4px);
-  }
-  50% {
-    opacity: 0.5;
-    filter: blur(5px);
-  }
-  60% {
-    opacity: 0.4;
-    filter: blur(6px);
-  }
-  70% {
-    opacity: 0.3;
-    filter: blur(7px);
-  }
-  80% {
-    opacity: 0.2;
-    filter: blur(8px);
-  }
-  90% {
-    opacity: 0.1;
-    filter: blur(9px);
-  }
-  100% {
-    opacity: 0;
-    filter: blur(10px);
   }
 }
