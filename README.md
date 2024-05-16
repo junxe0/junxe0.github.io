@@ -1,4 +1,3 @@
-[junxe0.github.io](나만의 홈페이지)
 junxe0.github.io
 
 20242397 류준서
