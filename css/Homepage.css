@@ -1,7 +1,45 @@
 .container {
   display: none;
-  height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  height: 100%;
+  background-image: no-repeat;
+  background-position: center;
+  background-image: url("/img/Bg1.jpg");
   position: absolute;
+}
+
+.container section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .imagebox {
+  margin: auto;
+  width: 1500px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+section img {
+  margin-left: 50px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.imagebox li {
+  width: 500px;
+  position: absolute;
+  list-style-type: none;
+}
+
+li p {
+  position: absolute;
+  width: 500px;
 }
