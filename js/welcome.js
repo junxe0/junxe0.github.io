@@ -1,3 +1,5 @@
+import Config from './config.js';
+
 function getCookie(name) {
   var cookie = document.cookie;
   
@@ -28,15 +30,15 @@ function openJxClipPage() {
   }
 }
 
-function setCookie(name, value, expiredays) {
+function setCookie(name, value) {
   var date = new Date();
-  date.setDate(date.getDate() + expiredays);
-  document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString();
+  date.setMinutes(date.getMinutes() + Config.CookieDeleteTime);
+  document.cookie = escape(name) + "=" + escape(value) + "; expires = " + date.toUTCString();
 }
 
-window.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function() {
   openJxClipPage();
-})
+});
 
 const Wtext = document.querySelector(".Wtext");
 
@@ -44,7 +46,7 @@ function Wtextr() {
   var container = document.querySelector(".container");
   document.querySelectorAll(".Wbody").forEach((Wt) => {
     Wt.classList.add("active");
-    setCookie("JxClipPageYN", "N", 1);
+    setCookie("JxClipPageYN", "N");
   });
   setTimeout(function() {
     container.style.display = "flex";
