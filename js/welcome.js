@@ -18,7 +18,11 @@ function openJxClipPage() {
   var container = document.querySelector(".container");
   var Wbody =  document.querySelector(".Wbody");
   var cookieCheck = getCookie("JxClipPageYN");
-  if (cookieCheck != "Y") {
+  if (cookieCheck != "N") {
+    Wbody.style.display = "block";
+    container.style.display = "none";
+  }
+  else {
     Wbody.style.display = "none";
     container.style.display = "flex";
   }
