@@ -4,14 +4,14 @@ function getCookie(name) {
   return cookie ? cookie[1] : null;
 }
 
-function gotoportfolio() {
+function gotoindex() {
   location.href = "index.html";
 }
 
 function openJxClipPage() {
   const cookieCheck = getCookie("JxClipPageYN");
     if (cookieCheck !== "N") {
-      gotoportfolio();
+      gotoindex();
     }
 }
 
