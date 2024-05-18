@@ -1,0 +1,241 @@
+#Skills {
+  width: 100%;
+  height: 100%;
+  top: 200%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.skill_listbox {
+  z-index: 30;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 1500px;
+  height: 400px;
+  margin-top: 80px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, #5AB2FF, transparent 30%);
+    animation: rotate 2s linear infinite;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+
+.skill_listbox > p {
+  z-index: 35;
+  width: 100%;
+  font-family: Ridge5-Bold;
+  font-size: 50px;
+}
+
+.skill_listbox > .imgbox {
+  width: 100%;
+  z-index: 35;
+}
+
+.imgbox > img {
+  height: 250px;
+  width: 250px;
+  margin: 0px 10px;
+}
+
+.carouselbox {
+  z-index: 30;
+  width: 910px;
+  height: 516px;
+  border-radius: 10px;
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, #7469B6, transparent 30%);
+    animation: rotate 2s linear infinite;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+
+h1 {
+  margin-top: 10px;
+  z-index: 5;
+  text-align: center;
+  font-family: Metropolis, Do Hyeon;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.carousel {
+  z-index: 20;
+  position: relative;
+  width: 900px;
+  height: 506px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
+}
+
+.arrow {
+  z-index: 100;
+  font-size: 2em;
+  width: 30px;
+  height: 50px;
+  line-height: 45px;
+  background: #ddd;
+  color: #222;
+  opacity: 0.4;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.hoverbox {
+  width: 100%;
+  height: 506px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+
+.hoverarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+}
+
+.des {
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 200px;
+  height: 200px;
+  background-image: url("/img/Magnifier-w.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  border-radius: 200px;
+  background-color: #222;
+}
+
+#modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+
+#modal-box.active {
+  display: flex;
+}
+
+#modal-contents {
+  background-color: #fff;
+  width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#modal-contents button {
+  background-color: #fff;
+  color: #ccc;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#profile > img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+#desc {
+  margin: 10px 20px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.datebox {
+  font-size: 1.2rem;
+  color: #ff8e5f;
+}
