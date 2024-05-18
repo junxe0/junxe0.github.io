@@ -14,7 +14,7 @@ function getCookie() {
 }
 
 function gotoindex() {
-  location.href = "index.html";
+  location.replace("index.html");
 }
 
 function openJxClipPage() {
