@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       HBGMenu.style.width = "0"; // 너비를 0으로 설정
       setTimeout(() => {
         HBGMenu.style.display = "none"; // 트랜지션 후 요소를 숨김
-      }, 500); // 트랜지션 시간(0.5초) 후에 display를 none으로 설정
+      }, 1000); // 트랜지션 시간(0.5초) 후에 display를 none으로 설정
     }
   });
 });
