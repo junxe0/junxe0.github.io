@@ -1,3 +1,5 @@
+import Config from './config.js';
+
 function getCookie() {
   let cookies = document.cookie.split(";");
 
@@ -14,7 +16,7 @@ function getCookie() {
 }
 
 function gotoindex() {
-  location.replace("index.html");
+  location.replace("./index.html");
 }
 
 function openJxClipPage() {

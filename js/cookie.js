@@ -18,7 +18,7 @@ function getCookie() {
 }
 
 function gotoportfolio() {
-  location.replace("portfolio.html");
+  location.replace("./portfolio.html");
 }
 
 function openJxClipPage() {
