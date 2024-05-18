@@ -27,7 +27,7 @@
 
 .imagebox img {
   margin-top: 320px;
-  margin-left: 180px;
+  margin-left: 100px;
   width: 180px;
   height: 350px;
   object-fit: cover;
@@ -37,9 +37,9 @@
 
 .imagebox .textbox {
   position: absolute;
-  margin-left: 250px;
-  margin-bottom: 250px;
-  width: 400px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+  width: 500px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -47,22 +47,30 @@
   transform: rotate( -75deg );
 }
 
-li h1 {
-  font-family: "BagelFatOne-Regular", sans-serif;
-  font-size: 35px;
-  font-weight: 400;
+.textbox h1 {
   color: #000;
   text-align: center;
   margin: 10px 0;
 }
 
-li h2 {
-  font-family: "Metropolis", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
+.textbox h2 {
   color: #000;
   text-align: center;
   margin: 10px 0;
+}
+
+.textbox h1 > span {
+  font-family: BagelFatOne-Regular, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.textbox h2 > span {
+  font-family: "Metropolis", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  opacity: 0;
 }
 
 .descbox {

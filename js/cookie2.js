@@ -1,18 +1,9 @@
 import Config from './config.js';
 
-function getCookie() {
-  let cookies = document.cookie.split(";");
-
-  for (let cookie of cookies) {
-    let trimmedCookie = cookie.trim();
-    if (trimmedCookie.startsWith(Config.CookieName + "=")) {
-      return trimmedCookie.substring(
-        Config.CookieName.length + 1
-      );
-    }
-  }
-
-  return null; // Cookie not found
+function getCookie(name) {
+  const cookies = document.cookie.split("; ").map(cookie => cookie.split("="));
+  const cookie = cookies.find(([cookieName]) => cookieName === name);
+  return cookie ? cookie[1] : "None";
 }
 
 function gotoindex() {
@@ -20,9 +11,8 @@ function gotoindex() {
 }
 
 function openJxClipPage() {
-  const cookieCheck = getCookie();
-  console.log(cookieCheck);
-  if (cookieCheck == "N") {
+  const cookieCheck = getCookie(Config.CookieName);
+  if (cookieCheck !== "N") {
     gotoindex();
   }
 }
