@@ -1,7 +1,16 @@
-function getCookie(name) {
-  const cookies = document.cookie.split("; ").map(cookie => cookie.split("="));
-  const cookie = cookies.find(([cookieName]) => cookieName === name);
-  return cookie ? cookie[1] : null;
+function getCookie() {
+  let cookies = document.cookie.split(";");
+
+  for (let cookie of cookies) {
+    let trimmedCookie = cookie.trim();
+    if (trimmedCookie.startsWith(Config.CookieName + "=")) {
+      return trimmedCookie.substring(
+        Config.CookieName.length + 1
+      );
+    }
+  }
+
+  return null; // Cookie not found
 }
 
 function gotoindex() {
@@ -9,10 +18,11 @@ function gotoindex() {
 }
 
 function openJxClipPage() {
-  const cookieCheck = getCookie("JxClipPageYN");
-    if (cookieCheck !== "N") {
-      gotoindex();
-    }
+  const cookieCheck = getCookie();
+  console.log(cookieCheck);
+  if (cookieCheck == "N") {
+    gotoindex();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", openJxClipPage);
