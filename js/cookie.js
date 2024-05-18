@@ -41,9 +41,11 @@ const Wtext = document.querySelector(".Wtext");
 
 function Wtextr() {
   Wbody.classList.add("active");
-  setCookie();
-
-  setInterval(gotoindex, 1000); // 1초 후 함수 실행
+  setInterval(() => {
+    gotoportfolio();
+    setCookie();
+  }, 1000); // 1초 후 실행
+  
 }
 
 Wtext.addEventListener("click", Wtextr);

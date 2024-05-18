@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.Wbody.active {
+.active {
   animation: smoke 1s linear forwards;
 }
 
@@ -99,7 +99,6 @@
   font-weight: bold;
   color: white;
   user-select: none;
-  /* -webkit-text-stroke: 3px black; */
   position: fixed;
   opacity: 0;
 }
