@@ -1,0 +1,127 @@
+@keyframes rotate {
+  40% {
+    opacity:.5;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes comeInStyle {
+  0% {
+    opacity: 100%;
+    transform: translate3d(0px, -3000px, -2000px);
+  }
+  1% {
+    opacity: 0%;
+    transform: translate3d(0px, -3000px, -2000px);
+  }
+  25% {
+    transform: translate3d(0px, -200px, -200px) scale(3) rotateX(0) rotateY(0);
+  }
+  50% {
+    transform: translate3d(200px, -0px, -0px) scale(6) rotateX(180deg) rotateY(90deg);
+
+  }
+  90% {
+    opacity: 0%;
+    transform: translate3d(-200px, 200px, 200px) scale(3) rotateX(360deg) rotateY(180deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: none;
+  }
+}
+
+@keyframes left_bar {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 250px;
+  }
+}
+
+@-webkit-keyframes active_menu_bar_01 {
+  0% {
+    transform : translateY(0px) rotate(0);
+  }
+  50% {
+    transform : translateY(10px) rotate(0);
+  }
+  100% {
+    transform : translateY(10px) rotate(-45deg);
+  }
+}
+@keyframes active_menu_bar_01 {
+  0% {
+    transform : translateY(0px) rotate(0);
+  }
+  50% {
+    transform : translateY(10px) rotate(0);
+  }
+  100% {
+    transform : translateY(10px) rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes active_menu_bar_02 {
+  0% {
+    opacity : 1;
+  }
+  50% {
+    opacity : 1;
+  }
+  100% {
+    opacity : 0;
+  }
+}
+@keyframes active_menu_bar_02 {
+  0% {
+    opacity : 1;
+  }
+  50% {
+    opacity : 1;
+  }
+  100% {
+    opacity : 0;
+  }
+}
+
+@-webkit-keyframes active_menu_bar_03 {
+  0% {
+    -webkit-transform : translateY(0px) rotate(0);
+  }
+  50% {
+    -webkit-transform : translateY(-11px) rotate(0);
+  }
+  100% {
+    -webkit-transform : translateY(-11px) rotate(45deg);
+  }
+}
+@keyframes active_menu_bar_03 {
+  0% {
+    -webkit-transform : translateY(0px) rotate(0);
+  }
+  50% {
+    -webkit-transform : translateY(-11px) rotate(0);
+  }
+  100% {
+    -webkit-transform : translateY(-11px) rotate(45deg);
+  }
+}

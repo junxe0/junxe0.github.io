@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main -->
+  <link rel="stylesheet" href="css/main.css"> <!-- Main -->
+  <!-- UI -->
+  <link rel="stylesheet" href="css/UI/nav.css"> <!-- 상단바 -->
+  <link rel="stylesheet" href="css/UI/menu.css"> <!-- 햄버거 메뉴 -->
+  <link rel="stylesheet" href="css/UI/section.css"> <!-- 현재 섹션 -->
+
+  <!-- 페이지 별 -->
+  <link rel="stylesheet" href="css/Page/Home.css"> <!-- Home -->
+  <link rel="stylesheet" href="css/Page/Profile.css"> <!-- Profile -->
+  <link rel="stylesheet" href="css/Page/Skills.css"> <!-- Sklills -->
+  <link rel="stylesheet" href="css/Page/Projects.css"> <!-- Projects -->
+  <link rel="stylesheet" href="css/Page/Contact.css"> <!-- Contact -->
+
+  <!-- 세팅 -->
+  <link rel="stylesheet" href="css/Setting/font.css">  <!-- Font -->
+  <link rel="stylesheet" href="css/Setting/animation.css">
+
+  <title>Junxeo's Portfolio</title>
+</head>
+<body>
+  <div class="navmenu" >
+    <div class="HBGbttn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="HBGMenu">
+      <img src="img/profile-b.png" alt="HBGprofile" class="HBGprofile">
+      <p>류준서</p>
+      <div>
+        <li><a href="#Home">HOME</a></li>
+        <li><a href="#Profile">PROFILE</a></li>
+        <li><a href="#Skills">SKILLS</a></li>
+        <li><a href="#Projects">PROJECTS</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+      </div>
+    </ul>
+    <nav class="clearfix">
+      <ul class="clearfix">
+        <li>
+          <a href="#Home"><span id="navHome">HOME</span></a>
+          <a href="#Profile"><span id="navProfile">PROFILE</span></a>
+          <a href="#Skills"><span id="navSkills">SKILLS</span></a>
+          <a href="#Projects"><span id="navProjects">PROJECTS</span></a>
+          <a href="#Contact"><span id="navContact">CONTACT</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="sectionbox">
+    <div id="nowsection">None</div>
+  </div>
+  
+  <div class="container" id="Home">
+    <div class="imagebox">
+      <img src="/img/profile-b.png" alt="profile">
+      <div class="textbox">
+        <li>
+          <h2>Hello!</h2>
+          <h1>안녕하세요.</h1>
+          <h1>류준서의 포트폴리오</h1>
+          <h1>사이트입니다!</h1>
+        </li>
+      </div>
+    </div>
+
+    <div class="descbox">
+      <div class="desctextbox">
+        <li>
+          <h2>Junseo's<br><br>Portfolio</h2>
+        </li>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="Profile">
+
+  </div>
+
+  <div class="container" id="Skills">
+    <div class="skill_listbox">
+      <p>Learning Skills</p>
+      <div class="imgbox">
+        <img src="/img/skills/Python2.png">
+        <img src="/img/skills/C2.png">
+        <img src="/img/skills/Html2.png">
+        <img src="/img/skills/Javascripts2.png">
+        <img src="/img/skills/CSS2.png">
+      </div>
+    </div>
+    <div class="carouselbox">
+      <div class="carousel">
+        <div class="arrow" id="left">&lang;</div>
+        <div class="hoverbox">
+          <div class="hoverarea">
+            <div class="des"></div>
+          </div>
+        </div>
+        <div class="arrow" id="right">&rang;</div>
+      </div>
+    </div>
+
+    <div id="modal-box">
+      <div id="modal-contents">
+        <button id="close">&times;</button>
+        <h1 id="title">Skills</h1>
+        <div id="profile">
+          <img src="/img/skills/Python.png">
+          <div id="desc">
+            <p class="user">이름 : <span id="name"></span></p>
+            <p class="user">접한 날 : <span id="encounter"></span><br>
+              <span class="datebox">약 <span id="date"></span> 전</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
