@@ -1,4 +1,4 @@
-import Config from './config.js';
+import Config from 'config.js';
 
 const Wbody = document.querySelector("Wbody");
 
@@ -8,14 +8,14 @@ function getCookie(name) {
   return cookie ? cookie[1] : null;
 }
 
-function gotoportfolio() {
-  location.href = "/portfolio.html";
+function gotoindex() {
+  location.href = "portfolio.html";
 }
 
 function openJxClipPage() {
   const cookieCheck = getCookie("JxClipPageYN");
     if (cookieCheck == "N") {
-      gotoportfolio();
+      gotoindex();
     }
 }
 
@@ -33,7 +33,7 @@ function Wtextr() {
   Wbody.classList.add("active");
   setCookie("JxClipPageYN", "N");
 
-  setInterval(gotoportfolio, 1000); // 1초 후 함수 실행
+  setInterval(gotoindex, 1000); // 1초 후 함수 실행
 }
 
 Wtext.addEventListener("click", Wtextr);
