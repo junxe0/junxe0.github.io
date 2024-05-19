@@ -15,7 +15,7 @@
   position: relative;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   opacity: 0;
-  animation: fadein 3s linear forwards,
+  animation: fadein 1s linear forwards,
   box_rotate 1s linear forwards;
   overflow: hidden;
   transform: translate(-10%, 40%);
@@ -64,6 +64,10 @@
   opacity: 0;
 }
 
+.textbox h1 > span.animated {
+  animation: fadein 500ms forwards;
+}
+
 .textbox h2 > span {
   font-family: "Metropolis", sans-serif;
   font-size: 60px;
@@ -71,24 +75,24 @@
   opacity: 0;
 }
 
+.textbox h2 > span.animated {
+  animation: fadein 500ms forwards;
+}
+
 .descbox {
   margin-top: 250px;
   margin-left: 400px;
-}
-
-.descbox li {
   display: flex;
   flex-direction: column;
-  animation: comeInStyle 2.5s ease-out;
 }
 
 .descbox h2 {
   font-family: "Metropolis", sans-serif;
   font-size: 150px;
   line-height: 110px;
+  text-align: right;
   font-weight: bold;
   color: #000;
-  text-align: center;
   margin: 40px 0;
   transition: all 0.5s;
   text-shadow: 10px 10px 0px #07bccc,
@@ -97,6 +101,7 @@
     25px 25px 0px #f40468,
     45px 45px 10px #482896;
   cursor: pointer;
+  animation: comeInStyle 5s ease-out;
 }
 
 .descbox h2:hover {

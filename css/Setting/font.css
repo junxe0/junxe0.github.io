@@ -143,3 +143,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* April16th-Promise */
+@font-face {
+  font-family: 'April16th-Promise';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/April16th-Promise.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}

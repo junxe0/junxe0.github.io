@@ -1,7 +1,6 @@
 // 캐러셀
 const carousel = document.querySelector(".carousel"); // 캐러셀 영역
 const pics = ["Python", "C", "Html", "JavaScripts", "CSS"]; // 이미지 배열
-carousel.style.backgroundImage = `url(/img/Skills/${pics[0]}.png)`; // 기본 이미지 설정
 const hoverbox = document.querySelector(".hoverbox"); // 캐러셀 hover시 검정 박스
 const hoverarea = document.querySelector(".hoverarea"); // 캐러셀 hover 영억
 const arrows = document.querySelectorAll(".arrow"); // 화살표
@@ -18,6 +17,7 @@ let sname = "";
 let sencounter = "";
 let i = 0; // 배열 인덱스
 
+carousel.style.backgroundImage = `url(/img/Skills/${pics[0]}.png)`; // 기본 이미지 설정
 arrows.forEach(arrow => {
   arrow.addEventListener("click", (e) => {
     if(e.target.id === "left") { // 왼쪽 화살표 클릭했다면?
@@ -36,44 +36,30 @@ arrows.forEach(arrow => {
   });
 });
 
+const skillsInfo = {
+  0: { name: "파이썬", encounter: "19년도 4월경", firstday: "2019-04" },
+  1: { name: "C언어", encounter: "24년도 3월", firstday: "2024-03" },
+  2: { name: "HTML", encounter: "21년도 4월경", firstday: "2021-04" },
+  3: { name: "JavaScripts", encounter: "18년도 9월경", firstday: "2018-09" },
+  4: { name: "CSS", encounter: "21년도 4월경", firstday: "2021-04" },
+};
 
 function clickcarousel() {
+  const skill = skillsInfo[i];
   img.src = `img/Skills/${pics[i]}2.png`;
-  if (i == 0) {
-    sname = "파이썬";
-    sencounter = "19년도 4월경";
-    firstday = new Date("2019-04");
-  }
-  else if (i == 1) {
-    sname = "C언어";
-    sencounter = "24년도 3월";
-    firstday = new Date("2024-03");
-  }
-  else if (i == 2) {
-    sname = "HTML";
-    sencounter = "21년도 4월경";
-    firstday = new Date("2021-04");
-  }
-  else if (i == 3) {
-    sname = "JavaScripts";
-    sencounter = "18년도 9월경";
-    firstday = new Date("2018-09");
-  }
-  else if (i == 4) {
-    sname = "CSS";
-    sencounter = "21년도 4월경";
-    firstday = new Date("2021-04");
-  }
-  let passedTime = today.getTime() - firstday.getTime(); // 시직한 날부터 오늘까지 흐른 시간
-  let passedDay = Math.round(passedTime / (1000 * 60 * 60 * 24 * 30)); // 밀리초를 달(month)로 변환;
-  name.innerText = `${sname}`;
-  encounter.innerText = `${sencounter}`;
-  if (passedDay / 12 >= 1) {
-    date.innerText = `${parseInt(passedDay / 12)}년 ${passedDay % 12}개월`;
-  }
-  else {
-    date.innerText = `${passedDay}개월`;
-  }
+  sname = skill.name;
+  sencounter = skill.encounter;
+  firstday = new Date(skill.firstday);
+
+  let passedTime = today - firstday; // 정확한 날짜 차이 계산
+  let passedDay = Math.round(passedTime / (1000 * 60 * 60 * 24)); // 밀리초를 일(day)로 변환
+  name.innerText = sname;
+  encounter.innerText = sencounter;
+  
+  // 년과 월로 표시
+  const years = Math.floor(passedDay / 365);
+  const months = Math.floor((passedDay % 365) / 30); // 간단한 근사값 사용
+  date.innerText = years > 0 ? `${years}년 ${months}개월` : `${months}개월`;
 }
 
 const modalBox = document.querySelector("#modal-box");

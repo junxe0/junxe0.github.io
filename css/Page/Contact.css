@@ -1,8 +1,12 @@
 #Contact {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 50%;
   top: 400%;
   position: absolute;
   overflow: hidden;
+}
+
+.contact_box {
+  height: 90%;
 }

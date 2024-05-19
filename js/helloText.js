@@ -2,8 +2,11 @@ const HelloT = document.querySelectorAll(".textbox span");
 
 function TextEffect() {
   let timer = 2000;
-  HelloT.forEach((item) => {
-    item.style.animation = `fadein 500ms ${(timer += 50)}ms forwards`;
+  HelloT.forEach((item, index) => {
+    requestAnimationFrame(() => {
+      item.classList.add('animated');
+      item.style.animationDelay = `${timer + index * 50}ms`;
+    });
   });
 }
 

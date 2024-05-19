@@ -3,6 +3,7 @@
   transition: all 0.4s;
   box-sizing: border-box;
   z-index: 25;
+  cursor: pointer;
 }
 
 .HBGbttn {
@@ -26,31 +27,25 @@
 .HBGbttn span:nth-of-type(1) {
   top: 0;
 }
-
 .HBGbttn span:nth-of-type(2) {
   top: 11px;
 }
-
 .HBGbttn span:nth-of-type(3) {
   bottom: 0;
 }
 
+.HBGbttn.active span {
+  background-color: #222;
+}
+
 .HBGbttn.active span:nth-of-type(1) {
-  animation : active_menu_bar_01 .5s forwards;
-  -webkit-animation : active_menu_bar_01 .5s forwards;
-  background-color: #222;
+  animation: active_menu_bar_01 .5s forwards;
 }
-
 .HBGbttn.active span:nth-of-type(2) {
-  animation : active_menu_bar_02 .5s forwards;
-  -webkit-animation : active_menu_bar_02 .5s forwards;
-  background-color: #222;
+  animation: active_menu_bar_02 .5s forwards;
 }
-
 .HBGbttn.active span:nth-of-type(3) {
-  animation : active_menu_bar_03 .5s forwards;
-  -webkit-animation : active_menu_bar_03 .5s forwards;
-  background-color: #222;
+  animation: active_menu_bar_03 .5s forwards;
 }
 
 .HBGMenu {
@@ -61,30 +56,36 @@
   height: 100%;
   z-index: 200;
   overflow: hidden;
-  transition: width 1s, opacity 1s; /* opacity에 대한 트랜지션 추가 */
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  visibility: hidden; /* 초기 visibility 설정 */
+  visibility: hidden;
   opacity: 0;
+  transition: opacity 1s, width 1s, visibility 1s;
+}
+
+.HBGMenu.active {
+  visibility: visible;
+  opacity: 1;
+  width: 20%;
 }
 
 .HBGMenu img {
   position: absolute;
   left: 50%;
   top: 5%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 0);
   width: 300px;
   height: 300px;
   border-radius: 300px;
   border: solid 3px black;
 }
 
-div > .HBGMenu > p {
+.HBGMenu p {
   position: absolute;
   left: 50%;
   top: 34%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 0);
   width: 250px;
   line-height: 40px;
   text-align: center;
@@ -96,12 +97,12 @@ div > .HBGMenu > p {
 .HBGMenu div {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 0);
   top: 600px;
   width: 320px;
 }
 
-.HBGMenu div > li {
+.HBGMenu li {
   margin-top: 30px;
   border-radius: 5px;
   border: solid 2px #222;
@@ -109,11 +110,11 @@ div > .HBGMenu > p {
   height: 45px;
 }
 
-.HBGMenu div > li:hover {
+.HBGMenu li:hover {
   opacity: 0.6;
 }
 
-.HBGMenu div > li > a {
+.HBGMenu li a {
   font-family: "Anurati";
   width: 320px;
   font-size: 20px;
