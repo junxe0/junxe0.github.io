@@ -85,12 +85,6 @@
   }
 }
 
-@keyframes box_rotate {
-  100% {
-    transform: rotate( 75deg ) translate(30%, 10%);
-  }
-}
-
 @keyframes comeInStyle {
   0% {
     opacity: 100%;

@@ -8,14 +8,20 @@
   overflow-x: hidden;
 }
 
+#Skills > p {
+  z-index: 35;
+  font-family: BagelFatOne-Regular;
+  font-size: 70px;
+}
+
 .skill_listbox {
   z-index: 30;
   display: flex;
   position: relative;
   overflow: hidden;
   width: 1500px;
-  height: 400px;
-  margin-top: 80px;
+  height: 300px;
+  margin-top: 20px;
   border-radius: 10px;
   text-align: center;
   background-color: #fff;
@@ -44,13 +50,6 @@
   }
 }
 
-.skill_listbox > p {
-  z-index: 35;
-  width: 100%;
-  font-family: Ridge5-Bold;
-  font-size: 50px;
-}
-
 .skill_listbox > .imgbox {
   width: 100%;
   z-index: 35;
@@ -59,7 +58,7 @@
 .imgbox > img {
   height: 250px;
   width: 250px;
-  margin: 0px 10px;
+  margin: 20px 10px;
 }
 
 .carouselbox {
@@ -67,7 +66,7 @@
   width: 910px;
   height: 516px;
   border-radius: 10px;
-  margin-top: 2%;
+  margin-top: 3%;
   display: flex;
   position: relative;
   overflow: hidden;

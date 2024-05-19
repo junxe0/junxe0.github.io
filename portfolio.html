@@ -33,7 +33,7 @@
       <span></span>
     </div>
     <ul class="HBGMenu">
-      <img src="img/profile-b.png" alt="HBGprofile" class="HBGprofile">
+      <img src="img/?.png" alt="HBGprofile" class="HBGprofile" onerror=this.src="img/No-Image.png">
       <p>류준서</p>
       <div>
         <li><a href="#Home">HOME</a></li>
@@ -61,68 +61,45 @@
   </div>
   
   <div class="container" id="Home">
-    <div class="imagebox">
-      <img src="img/profile-b.png" alt="profile">
-      <div class="textbox">
-        <li>
-          <h2>
-            <span>H</span>
-            <span>e</span>
-            <span>l</span>
-            <span>l</span>
-            <span>o</span>
-            <span>!</span>
-          </h2>
-          <h1>
-            <span>안</span>
-            <span>녕</span>
-            <span>하</span>
-            <span>세</span>
-            <span>요</span>
-            <span>.</span>
-          </h1>
-          <h1>
-            <span>류</span>
-            <span>준</span>
-            <span>서</span>
-            <span>의</span>&nbsp;
-            <span>포</span>
-            <span>트</span>
-            <span>폴</span>
-            <span>리</span>
-            <span>오</span>
-          </h1>
-          <h1>
-            <span>사</span>
-            <span>이</span>
-            <span>트</span>
-            <span>입</span>
-            <span>니</span>
-            <span>다</span>
-            <span>!</span>
-          </h1>
-        </li>
-      </div>
-    </div>
-
-    <div class="descbox">
-      <h2>Junseo's<br><br>Portfolio</h2>
+    <div class="PortfolioT">
+      <h2>Junseo's<br>Portfolio</h2>
     </div>
   </div>
   
   <div class="container" id="Profile">
-
+    <div class="titleBox">
+      <h1>Profile</h1>
+    </div>
+    <div class="profileBox">
+      <img src="" onerror=this.src="img/No-Image.png">
+      <div class="descBox">
+        <div class="descTitleBox">
+          <p class="title">Name.</p>
+          <p class="title">Birth.</p>
+          <p class="title">Tel.</p>
+          <p class="title">Mail.</p>
+          <p class="title">Wish Jobs.</p>
+        </div>
+        <div class="descContentsBox">
+          <p class="contents"><span id="name">류준서</span></p>
+          <p class="contents"><span id="birth">2005. 6. 9.</span></p>
+          <p class="contents"><span id="tel">010 - 6439 - 4775</span></p>
+          <p class="contents"><span id="mail">juneinyunei@naver.com</span></p>
+          <p class="contents"><span id="wish">Program Developer<br>Web Developer</span></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container" id="Skills">
+    <p>Learning Skills</p>
     <div class="skill_listbox">
-      <p>Learning Skills</p>
       <div class="imgbox">
-        <img src="img/Skills/Python2.png">
-        <img src="img/Skills/C2.png">
-        <img src="img/Skills/Html2.png">
-        <img src="img/Skills/JavaScripts2.png">
-        <img src="img/Skills/CSS2.png">
+        <img src="img/Skills/Python2.png" onerror=this.src="img/No-Image.png">
+        <img src="img/Skills/C2.png" onerror=this.src="img/No-Image.png">
+        <img src="img/Skills/Html2.png" onerror=this.src="img/No-Image.png">
+        <img src="img/Skills/JavaScripts2.png" onerror=this.src="img/No-Image.png">
+        <img src="img/Skills/CSS2.png" onerror=this.src="img/No-Image.png">
       </div>
     </div>
     <div class="carouselbox">
@@ -142,7 +119,7 @@
         <button id="close">&times;</button>
         <h1 id="title">Skills</h1>
         <div id="profile">
-          <img src="img/Skills/Python.png">
+          <img src="img/Skills/Python.png" onerror=this.src="img/No-Image.png">
           <div id="desc">
             <p class="user">이름 : <span id="name"></span></p>
             <p class="user">접한 날 : <span id="encounter"></span><br>
@@ -175,7 +152,7 @@
   <script type="module" src="js/cookie2.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/helloText.js"></script>
+  <script src="js/Text.js"></script>
   <script src="js/carousel.js"></script>
 </body>
 </html>

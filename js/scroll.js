@@ -3,7 +3,7 @@ let sectionPositions = []; // 섹션의 위치
 let currentSectionId = '';
 
 const navItems = document.querySelectorAll(".navmenu a > span");
-const imageBox = document.querySelector('.imagebox');
+const PortfolioT = document.querySelector('.PortfolioT');
 const sections = document.querySelectorAll('.container');
 const nowsection = document.querySelector('#nowsection');
 
@@ -74,7 +74,7 @@ function highlightCurrentNav(pageId) {
 function onScroll() {
   requestAnimationFrame(() => {
     const scrollPosition = window.pageYOffset;
-    imageBox.style.marginLeft = `${scrollPosition}px`;
+    PortfolioT.style.marginRight = `${100 + (scrollPosition * 1.5)}px`;
     highlightAndShowCurrentSection(scrollPosition);
   });
 }
