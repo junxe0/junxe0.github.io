@@ -66,7 +66,7 @@
   width: 910px;
   height: 516px;
   border-radius: 10px;
-  margin-top: 3%;
+  margin-top: 1%;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -211,7 +211,7 @@ h1 {
 #profile {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #ccc;
   padding: 10px;
@@ -220,14 +220,16 @@ h1 {
 #profile > img {
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  border: solid 1px #222;
 }
 
 #desc {
+  width: 60%;
   margin: 10px 20px;
+  text-align: center;
 }
 
-p {
+#desc > p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.5rem;

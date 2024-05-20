@@ -7,9 +7,9 @@ const arrows = document.querySelectorAll(".arrow"); // 화살표
 
 // 모달
 const img = document.querySelector("#profile > img");
-const name = document.querySelector("#name");
-const encounter = document.querySelector("#encounter");
-const date = document.querySelector("#date");
+const name = document.querySelector("p > #name");
+const encounter = document.querySelector("p > #encounter");
+const date = document.querySelector(".datebox > #date");
 // 날짜 계산
 let firstday = new Date("2021-07"); // 시작한 날
 const today = new Date(); // 오늘
@@ -37,8 +37,8 @@ arrows.forEach(arrow => {
 });
 
 const skillsInfo = {
-  0: { name: "파이썬", encounter: "19년도 4월경", firstday: "2019-04" },
-  1: { name: "C언어", encounter: "24년도 3월", firstday: "2024-03" },
+  0: { name: "Python", encounter: "19년도 4월경", firstday: "2019-04" },
+  1: { name: "C", encounter: "24년도 3월", firstday: "2024-03" },
   2: { name: "HTML", encounter: "21년도 4월경", firstday: "2021-04" },
   3: { name: "JavaScripts", encounter: "18년도 9월경", firstday: "2018-09" },
   4: { name: "CSS", encounter: "21년도 4월경", firstday: "2021-04" },

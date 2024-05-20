@@ -70,7 +70,7 @@
   width: 20%;
 }
 
-.HBGMenu img {
+.HBGMenu > img {
   position: absolute;
   left: 50%;
   top: 5%;

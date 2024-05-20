@@ -10,3 +10,9 @@
 .contact_box {
   height: 86.5%;
 }
+
+.contact_box > h1 {
+  color: #222;
+  font-size: 70px;
+  font-family: BagelFatOne-Regular;
+}

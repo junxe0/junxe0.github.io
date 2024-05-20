@@ -15,7 +15,7 @@ function PortfolioText() {
   h2.classList.remove("active");
   setTimeout(function() {
     h2.classList.add("active");
-  }, 2200);
+  }, 2500);
 }
 
 document.addEventListener("DOMContentLoaded", PortfolioText);
