@@ -7,14 +7,12 @@ const arrows = document.querySelectorAll(".arrow"); // 화살표
 
 // 모달
 const img = document.querySelector("#profile > img");
-const name = document.querySelector("p > #name");
+const sname = document.querySelector("p > #sname");
 const encounter = document.querySelector("p > #encounter");
 const date = document.querySelector(".datebox > #date");
 // 날짜 계산
 let firstday = new Date("2021-07"); // 시작한 날
 const today = new Date(); // 오늘
-let sname = "";
-let sencounter = "";
 let i = 0; // 배열 인덱스
 
 carousel.style.backgroundImage = `url(/img/Skills/${pics[0]}.png)`; // 기본 이미지 설정
@@ -37,24 +35,22 @@ arrows.forEach(arrow => {
 });
 
 const skillsInfo = {
-  0: { name: "Python", encounter: "19년도 4월경", firstday: "2019-04" },
-  1: { name: "C", encounter: "24년도 3월", firstday: "2024-03" },
-  2: { name: "HTML", encounter: "21년도 4월경", firstday: "2021-04" },
-  3: { name: "JavaScripts", encounter: "18년도 9월경", firstday: "2018-09" },
-  4: { name: "CSS", encounter: "21년도 4월경", firstday: "2021-04" },
+  0: { sname: "Python", encounter: "19년도 4월경", firstday: "2019-04" },
+  1: { sname: "C", encounter: "24년도 3월", firstday: "2024-03" },
+  2: { sname: "HTML", encounter: "21년도 4월경", firstday: "2021-04" },
+  3: { sname: "JavaScripts", encounter: "18년도 9월경", firstday: "2018-09" },
+  4: { sname: "CSS", encounter: "21년도 4월경", firstday: "2021-04" },
 };
 
 function clickcarousel() {
   const skill = skillsInfo[i];
   img.src = `img/Skills/${pics[i]}2.png`;
-  sname = skill.name;
-  sencounter = skill.encounter;
   firstday = new Date(skill.firstday);
 
   let passedTime = today - firstday; // 정확한 날짜 차이 계산
   let passedDay = Math.round(passedTime / (1000 * 60 * 60 * 24)); // 밀리초를 일(day)로 변환
-  name.innerText = sname;
-  encounter.innerText = sencounter;
+  sname.innerText = skill.sname;
+  encounter.innerText = skill.encounter;
   
   // 년과 월로 표시
   const years = Math.floor(passedDay / 365);

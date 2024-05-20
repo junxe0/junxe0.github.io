@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/UI/nav.css"> <!-- 상단바 -->
   <link rel="stylesheet" href="css/UI/menu.css"> <!-- 햄버거 메뉴 -->
   <link rel="stylesheet" href="css/UI/section.css"> <!-- 현재 섹션 -->
+  <link rel="stylesheet" href="css/UI/alert.css"> <!-- 알림 -->
   <link rel="stylesheet" href="css/UI/footer.css"> <!-- 하단바 -->
 
   <!-- 페이지 별 -->
@@ -22,6 +23,7 @@
   <!-- 세팅 -->
   <link rel="stylesheet" href="css/Setting/font.css">  <!-- Font -->
   <link rel="stylesheet" href="css/Setting/animation.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> 
 
   <title>Junxeo's Portfolio</title>
 </head>
@@ -54,6 +56,10 @@
         </li>
       </ul>
     </nav>
+  </div>
+
+  <div class="alertbox">
+    <div id="alerts"></div>
   </div>
 
   <div class="sectionbox">
@@ -121,7 +127,7 @@
         <div id="profile">
           <img src="img/Skills/Python.png" onerror=this.src="img/No-Image.png">
           <div id="desc">
-            <p>이름 : <span id="name">Python</span></p>
+            <p>이름 : <span id="sname"></span></p>
             <p>접한 날 : <span id="encounter"></span><br>
               <span class="datebox">약 <span id="date"></span> 전</span>
             </p>
@@ -138,6 +144,17 @@
   <div class="container" id="Contact">
     <div class="contact_box">
       <h1>Contact</h1>
+      <div class="info_box">
+        <span>전화번호
+          <p>010-6439-4775</p>
+          <span id="copyTel"><i class="far fa-clipboard"></i></span><a href="tel:+821064394775"><i class="fas fa-mobile"></i></a>
+        </span>
+        <span>이메일
+          <p>juneinyunei@naver.com</p>
+          <span id="copyMail"><i class="far fa-clipboard"></i><a href="mailto:juneinyunei@naver.com"></span><i class="far fa-paper-plane" id="infoMail"></i></i></i></a>
+        </span>
+      </div>
+      <p>Icon을 클릭시 복사 또는 연결됩니다.</p>
     </div>
 
     <footer>
@@ -154,5 +171,6 @@
   <script src="js/scroll.js"></script>
   <script src="js/Text.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/alert.js"></script>
 </body>
 </html>

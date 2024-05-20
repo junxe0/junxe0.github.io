@@ -21,7 +21,7 @@
   overflow: hidden;
   width: 1500px;
   height: 300px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
   text-align: center;
   background-color: #fff;
@@ -53,12 +53,13 @@
 .skill_listbox > .imgbox {
   width: 100%;
   z-index: 35;
+  height: 250px;
 }
 
 .imgbox > img {
   height: 250px;
   width: 250px;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 .carouselbox {
@@ -220,7 +221,6 @@ h1 {
 #profile > img {
   width: 200px;
   height: 200px;
-  border: solid 1px #222;
 }
 
 #desc {
