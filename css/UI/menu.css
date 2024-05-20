@@ -70,21 +70,10 @@
   width: 20%;
 }
 
-.HBGMenu > img {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate(-50%, 0);
-  width: 300px;
-  height: 300px;
-  border-radius: 300px;
-  border: solid 2px black;
-}
-
 .HBGMenu p {
   position: absolute;
   left: 50%;
-  top: 34%;
+  top: 10%;
   transform: translate(-50%, 0);
   width: 250px;
   line-height: 40px;
@@ -95,7 +84,6 @@
 }
 
 #Clock {
-  margin-top: 70px;
   line-height: 50px;
 }
 
@@ -103,12 +91,12 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 600px;
+  top: 500px;
   width: 320px;
 }
 
 .HBGMenu li {
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: 5px;
   border: solid 2px #222;
   line-height: 45px;

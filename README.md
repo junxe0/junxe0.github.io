@@ -16,6 +16,8 @@ HTML, CSS, JavaScript 등을 작성할때 구글 등을 통해 서칭하고 적�
 
 5. 컨택트 : 컨택트 화면에서는 전화번호와 이메일이 떠있는데 각각 아래에 있는 클립 보드 아이콘을 클릭시 전화번호 혹은 이메일이 복사가되고 복사 되었다는 알림이 뜹니다. 또 그 옆에 있는 아이콘을 클릭시 전화가 걸리거나 이메일로 메일을 보낼 수 있도록 연결됩니다.
 
+6. 기타 : 햄버거 버튼, 상단바, 현재 섹션 표시 UI, 하단바 등이 있습니다.
+
 [포트폴리오 페이지](https://junxe0.github.io/) https://junxe0.github.io/
 
 [깃헙 페이지](https://github.com/junxe0/junxe0.github.io) https://github.com/junxe0/junxe0.github.io
