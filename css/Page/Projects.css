@@ -217,3 +217,10 @@
   font-size: 30px;
   box-sizing: border-box;
 }
+
+#InfomationButton {
+  color: whitesmoke;
+  margin-top: 800px;
+  font-family: TTHakgyoansimUndongjangL;
+  font-size: 20px;
+}
