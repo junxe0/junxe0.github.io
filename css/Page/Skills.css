@@ -229,14 +229,20 @@ h1 {
   text-align: center;
 }
 
-#desc > p {
+#desc p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.5rem;
   line-height: 1.5;
+  font-family: TTHakgyoansimUndongjangL;
+}
+
+#desc > p span {
+  font-family: TTHakgyoansimUndongjangL;
 }
 
 .datebox {
   font-size: 1.2rem;
+  line-height: 1.2;
   color: #ff8e5f;
 }

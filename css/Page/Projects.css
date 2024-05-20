@@ -7,3 +7,213 @@
   overflow: hidden;
   background-color: #222;
 }
+
+.selectBox {
+  margin-top: 9%;
+  margin-left: 20px;
+  height: 74%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.selectBox span {
+  margin: 20px 0;
+}
+
+.selectBox span > p {
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: solid 2px whitesmoke;
+  font-family: April16th-Promise;
+  font-size: 30px;
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+
+.selectBox span > p:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.projectBox {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+  margin-left: 550px;
+  align-items: center;
+}
+
+.DiscordBot {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+
+.DiscordBot > img {
+  margin-left: 50px;
+  object-fit: contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.Busanheng {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+
+.Busanheng > img {
+  margin-left: 50px;
+  object-fit: contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.PortfolioWeb {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+
+.PortfolioWeb > img {
+  margin-left: 50px;
+  object-fit: contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.DiscordWebCopy {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+
+.DiscordWebCopy > img {
+  margin-left: 50px;
+  object-fit: contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.GoogleDinosaurGame {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+
+.GoogleDinosaurGame > img {
+  margin-left: 50px;
+  object-fit: contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+/* 공통 */
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin-left: 50px;
+  border-left: solid 1px #fff;
+}
+
+.projectDescBox {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  height: 40%;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.projectDescBox > p {
+  font-family: TTHakgyoansimUndongjangL;
+}
+
+.projectTagBox {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  color: #89a5ea;
+  text-align: center;
+  font-size: 10px;
+}
+
+.projectTagBox > p {
+  border-radius: 20px;
+  border: solid 2px #89a5ea;
+  padding: 5px 10px;
+}
+
+.projectGotoBox {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+}
+
+.projectGotoBox > p {
+  border-radius: 10px;
+  padding: 10px 10px;
+  background: #fff;
+  color: #222;
+}
+
+.projectGotoBox > p:hover {
+  scale: 1.2;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#Projects .active {
+  border-radius: 5px;
+  background: #ff8e7f;
+  font-family: April16th-Promise;
+  font-size: 30px;
+  box-sizing: border-box;
+}
