@@ -1,5 +1,6 @@
 const alertbox = document.querySelector(".alertbox");
 const alerts = document.querySelector('#alerts');
+
 const copyTel = document.querySelector('#copyTel');
 const copyMail = document.querySelector('#copyMail');
 
