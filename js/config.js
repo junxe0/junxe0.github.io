@@ -1,6 +1,6 @@
 const Config = {
   CookieName: "JxClipPageYN",
-  CookieDeleteTime: 10, // 10 : 10분
+  CookieDeleteTime: 30, // 30 : 30분
 };
 
 export default Config;
