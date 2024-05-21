@@ -128,7 +128,7 @@
   border-radius: 20px;
 }
 
-.GoogleDinosaurGame {
+.ChromeDinosaurGame {
   display: flex;
   opacity: 0;
   flex-direction: row;
@@ -139,7 +139,7 @@
   visibility: hidden;
 }
 
-.GoogleDinosaurGame > img {
+.ChromeDinosaurGame > img {
   margin-left: 50px;
   object-fit: contain;
   height: 500px;

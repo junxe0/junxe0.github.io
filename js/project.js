@@ -7,14 +7,14 @@ const DiscordBot = document.querySelector(".DiscordBot");
 const Busanheng = document.querySelector(".Busanheng");
 const PortfolioWeb = document.querySelector(".PortfolioWeb");
 const DiscordWebCopy = document.querySelector(".DiscordWebCopy");
-const GoogleDinosaurGame = document.querySelector(".GoogleDinosaurGame");
+const ChromeDinosaurGame = document.querySelector(".ChromeDinosaurGame");
 
 function AllDisplayHidden() {
   DiscordBot.style.cssText = `opacity: 0; visibility: hidden;`;
   Busanheng.style.cssText = `opacity: 0; visibility: hidden;`;
   PortfolioWeb.style.cssText = `opacity: 0; visibility: hidden;`;
   DiscordWebCopy.style.cssText = `opacity: 0; visibility: hidden;`;
-  GoogleDinosaurGame.style.cssText = `opacity: 0; visibility: hidden;`;
+  ChromeDinosaurGame.style.cssText = `opacity: 0; visibility: hidden;`;
   project1.classList.remove("active");
   project2.classList.remove("active");
   project3.classList.remove("active");
@@ -49,5 +49,5 @@ project4.addEventListener("click", () => {
 project5.addEventListener("click", () => {
   AllDisplayHidden();
   project5.classList.add("active");
-  GoogleDinosaurGame.style.cssText = `display: flex; opacity: 1; visibility: visible;`;
+  ChromeDinosaurGame.style.cssText = `display: flex; opacity: 1; visibility: visible;`;
 })
