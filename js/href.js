@@ -21,7 +21,7 @@ DBDiscordPy.addEventListener("click", () => {
 })
 
 BSHGithub.addEventListener("click", () => {
-  showAlert("현재 비활성화 되어있는 메뉴입니다!");
+  gotopage("https://github.com/junxe0/Busanheng");
 })
 
 PTFLOGithub.addEventListener("click", () => {
