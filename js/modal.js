@@ -17,7 +17,7 @@ const skillsInfo = {
 
 function clickcarousel() {
   const skill = skillsInfo[carouseli];
-  img.src = `img/Skills/${pics[carouseli]}2.png`;
+  img.src = `https://cdn.jsdelivr.net/gh/junxe0/junxe0.github.io@master/img/Skills/${pics[carouseli]}2.png`;
   firstday = new Date(skill.firstday);
 
   let passedTime = today - firstday; // 정확한 날짜 차이 계산

@@ -7,7 +7,7 @@ const arrows = document.querySelectorAll(".arrow"); // 화살표
 
 let carouseli = 0; // 배열 인덱스
 
-carousel.style.backgroundImage = `url(/img/Skills/${pics[0]}.png)`; // 기본 이미지 설정
+carousel.style.backgroundImage = `url(https://cdn.jsdelivr.net/gh/junxe0/junxe0.github.io@master/img/Skills/${pics[0]}.png)`; // 기본 이미지 설정
 arrows.forEach(arrow => {
   arrow.addEventListener("click", (e) => {
     if(e.target.id === "left") { // 왼쪽 화살표 클릭했다면?
@@ -22,6 +22,6 @@ arrows.forEach(arrow => {
         carouseli = 0; // 첫번째 페이지로 이동
       }
     }
-    carousel.style.backgroundImage = `url(/img/Skills/${pics[carouseli]}.png)`; // 현재 이미지 표시
+    carousel.style.backgroundImage = `url(https://cdn.jsdelivr.net/gh/junxe0/junxe0.github.io@master/img/Skills/${pics[carouseli]}.png)`; // 현재 이미지 표시
   });
 });
