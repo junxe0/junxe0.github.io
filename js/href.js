@@ -21,7 +21,6 @@ DBDiscordPy.addEventListener("click", () => {
 })
 
 BSHGithub.addEventListener("click", () => {
-  showAlert("3초 후 창이 열립니다.");
   gotopage("https://github.com/junxe0/Busanheng");
 })
 
