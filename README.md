@@ -21,5 +21,3 @@ HTML, CSS, JavaScript 등을 작성할때 구글 등을 통해 서칭하고 적�
 [포트폴리오 페이지](https://junxe0.github.io/) https://junxe0.github.io/
 
 [깃헙 페이지](https://github.com/junxe0/junxe0.github.io) https://github.com/junxe0/junxe0.github.io
-
-20242397 류준서
