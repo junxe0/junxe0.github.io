@@ -1,12 +1,8 @@
 const DBGithub = document.querySelector("#DBGithub"); // 디코봇 깃허브
 const DBDiscordPy = document.querySelector("#DBDiscordPy"); // Discord.py 2.0
-
 const BSHGithub = document.querySelector("#BSHGithub"); // 부산헹 깃허브
-
 const PTFLOGithub = document.querySelector("#PTFLOGithub"); // 포트폴리오 깃허브
-
 const DWCGithub = document.querySelector("#DWCGithub"); // 디코 웹사이트 카피 깃허브
-
 const GDGGithub =  document.querySelector("#GDGGithub"); // 크롬 공룡 게임 카피 깃허브
 
 DBGithub.addEventListener("click", () => {
